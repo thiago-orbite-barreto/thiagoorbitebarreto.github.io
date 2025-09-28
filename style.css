@@ -1,0 +1,98 @@
+/* styles.css */
+
+/* * Documentação Geral:
+ * Este é o arquivo de estilo para o site pessoal.
+ * Utilizamos uma abordagem "mobile-first", garantindo que o site 
+ * fique bom em telas pequenas, e depois ajustamos para telas maiores.
+ * A paleta de cores é baseada em tons pastel para uma aparência suave.
+*/
+
+/* Variáveis de Cor: Facilita a mudança de cores no futuro */
+:root {
+    --cor-fundo: #F8F9FA;      /* Um cinza muito claro, quase branco */
+    --cor-texto: #343A40;      /* Cinza escuro para o texto, mais suave que o preto */
+    --cor-destaque: #85C1E9;   /* Um azul pastel para títulos e links */
+    --cor-link-hover: #3498DB; /* Um azul um pouco mais forte para quando o mouse passa por cima */
+    --cor-branco: #FFFFFF;     /* Branco puro para o container principal */
+}
+
+/* Estilos Globais para o Corpo da Página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte moderna e legível */
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 20px; /* Adiciona um respiro nas laterais em telas pequenas */
+    background-color: var(--cor-fundo); /* Aplica a cor de fundo que definimos */
+    color: var(--cor-texto); /* Define a cor padrão do texto */
+    line-height: 1.6; /* Melhora a legibilidade do texto aumentando o espaço entre as linhas */
+}
+
+/* Container Principal: Centraliza o conteúdo na página */
+header, nav, main, footer {
+    max-width: 800px; /* Define uma largura máxima para o conteúdo */
+    margin: 0 auto;   /* Centraliza o container na tela (esquerda/direita) */
+    padding: 20px;    /* Espaçamento interno para o conteúdo não ficar colado nas bordas */
+}
+
+/* Estilos do Cabeçalho */
+header {
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    border-bottom: 2px solid var(--cor-fundo); /* Adiciona uma linha sutil abaixo do cabeçalho */
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: var(--cor-destaque); /* Usa a cor de destaque para o nome */
+    margin-bottom: 5px;
+}
+
+header p {
+    font-style: italic;
+    color: #6c757d; /* Um cinza um pouco mais claro para o subtítulo */
+}
+
+/* Estilos da Navegação */
+nav {
+    text-align: center; /* Centraliza os links de navegação */
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: var(--cor-destaque); /* Cor dos links de navegação */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-weight: bold;
+    margin: 0 15px; /* Espaçamento entre os links */
+    transition: color 0.3s; /* Adiciona uma transição suave na cor ao passar o mouse */
+}
+
+nav a:hover {
+    color: var(--cor-link-hover); /* Muda a cor do link ao passar o mouse */
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+}
+
+/* Estilos do Conteúdo Principal */
+main {
+    background-color: var(--cor-branco); /* Fundo branco para destacar a área de conteúdo */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais moderno */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra sutil para dar profundidade */
+}
+
+main h2 {
+    color: var(--cor-destaque);
+}
+
+main a {
+    color: var(--cor-link-hover); /* Cor para os links dentro do texto */
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: none; /* Remove o sublinhado ao passar o mouse para links no texto */
+}
+
+/* Estilos do Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em; /* Tamanho da fonte um pouco menor */
+    color: #6c757d; /* Cor de texto mais suave */
+}
